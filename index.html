@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>CheckValorant</title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="assets/img/logo.png" alt="logo" class="logo__img">
+            </a>
+
+            <!-- <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item ">
+                        <a href="#home" class="nav__link">
+                            <i class='bx bx-home'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item ">
+                        <a href="#about" class="nav__link">
+                            <i class='bx bx-user'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-book'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">
+                            <i class='bx bx-briefcase-alt-2'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class='bx bx-message-square-dots'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div> -->
+
+            <!--=============== theme change button ===============-->
+            <i class='bx bx-moon change-theme change-theme-button' id="theme-button"></i>
+
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <span class="home__greeting">Your
+                        Daily</span>
+                    <h1 class="home__title">Valorant
+                        Store Checker</h1>
+                    <h3 class="home__desc">Don't want to open the game just to check your daily store rotation?
+                        <br>Don't worry... WE GOT YOU!
+                    </h3>
+                    <h3 class="home__login-text">Login to check your store
+                    </h3>
+                    <div class="login__modal">
+                        <div class="login__modal-content">
+                            <i class='bx bx-x login__modal-close'></i>
+
+                            <h3 class="login__modal-title">Login to check your store</h3>
+                            <div class="login__modal-form">
+                                <form id='login' class="form">
+                                    <div class="login__form-div">
+                                        <label for="" class="login__form-tag">Enter Riot ID</label>
+                                        <input type="text" class="login__form-input" id="riotid" name="riotid"
+                                            placeholder="RIOT ID" required>
+                                    </div>
+
+                                    <div class="login__form-div">
+                                        <label for="" class="login__form-tag">Enter password</label>
+                                        <input type="password" class="login__form-input" id="pswrd" name="pswrd"
+                                            placeholder="PASSWORD" required>
+                                    </div>
+
+                                    <div class="select login__form-div">
+                                        <label for="" class="login__form-tag">Choose Region</label>
+                                        <select name="region" id="region" class="" required>
+                                            <option value="" disabled selected hidden>Choose Region</option>
+                                            <option value="na">NA/BR/LATAM</option>
+                                            <option value="eu">EU</option>
+                                            <option value="kr">KR</option>
+                                            <option value="ap">AP</option>
+                                        </select>
+                                    </div>
+                                    <button class="button submit__button" type="submit">CHECK</button>
+                                </form>
+                            </div>
+                            <!-- <p class="services__modal-description">
+
+                            </p> -->
+
+                            <!-- <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        I develop the user interfaces.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Web Page design and development.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        I create the UX element interactions.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        I position your company brand.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Create modern 3-D experiences.
+                                    </p>
+                                </li>
+                            </ul> -->
+                        </div>
+                    </div>
+
+                    <div class="buttons">
+                        <button id="loginUser" class="button home__button login__button">log-IN</button>
+                        <button class="button home__button logout__button">log-OUT</button>
+                    </div>
+
+
+                    <!-- <div class="home__button login__button">
+                        <a href="" class="button button--ghost">
+                            log-IN
+                        </a>
+
+                        <a href="#about" class="button logout__button">log-OUT</a>
+                    </div> -->
+                </div>
+                <a href="#services" class="home__scroll">
+                    <i class='bx bx-down-arrow-circle  home__scroll-icon'></i>
+                    <span class="home__scroll-name">Scroll Down to see store</span>
+                </a>
+                <div class="home__handle">
+                    <img src="assets/img/hm.jpg" alt="" class="home__img">
+                    <div class="home__handle-featured">
+                        <p class="home__handle-txt">FEATURED | </p>
+                        <p class="home__handle-txt">Endevour Bundle</p>
+                    </div>
+                </div>
+
+                <!-- <div class="home__social">
+                    <a href="#" target="_blank" class="home__social-link">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="#" target="_blank" class="home__social-link">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="#" target="_blank" class="home__social-link">
+                        <i class='bx bxl-dribbble'></i>
+                    </a>
+                </div> -->
+
+
+            </div>
+
+        </section>
+
+        <!--=============== SERVICES ===============-->
+        <section class="services section " id="services">
+            <span class="section__subtitle">Our Services</span>
+            <h2 class="section__title">What Can You Check</h2>
+
+            <div class="services__container container grid">
+                <div class="services__card">
+                    <h3 class="services__title">Daily <br> Store</h3>
+                    <a href="/dailystore/">
+                        <span class="services__button">
+                            Check <i class='bx bx-right-arrow services__icon'></i>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="services__card">
+                    <h3 class="services__title">Night <br> Market</h3>
+
+                    <a href="/nightmarket/">
+                        <span class="services__button">
+                            Check <i class='bx bx-right-arrow services__icon'></i>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="services__card">
+                    <h3 class="services__title">Match <br> Stats</h3>
+
+                    <span class="services__button">
+                        Coming Soon
+                        <!-- Check <i class='bx bx-right-arrow services__icon'></i> -->
+                    </span>
+
+                </div>
+
+                <div class="services__card">
+                    <h3 class="services__title">See <br> Leaderboard</h3>
+
+                    <span class="services__button">
+                        Coming Soon
+                        <!-- Check <i class='bx bx-right-arrow services__icon'></i> -->
+                    </span>
+
+                </div>
+
+                <div class="services__card">
+                    <h3 class="services__title">Skin <br> Collection</h3>
+
+                    <span class="services__button">
+                        Coming Soon
+                        <!-- Check <i class='bx bx-right-arrow services__icon'></i> -->
+                    </span>
+
+                </div>
+
+                <div class="services__card">
+                    <div class="serv">
+                        <h3 class="services__title">Agent <br> Progression</h3>
+
+                        <span class="services__button">
+                            Coming Soon
+                            <!-- Check <i class='bx bx-right-arrow services__icon'></i> -->
+                        </span>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!--=============== FAQs ===============-->
+        <section class="faq section" id="faq">
+            <span class="section__subtitle">Your Queries</span>
+            <h2 class="section__title">Frequently Asked Questions</h2>
+
+            <div class="faq__container container ">
+                <div class="faq__wrapper">
+                    <div class="faq__container-unit">
+                        <div class="question">
+                            What is my Riot ID?
+                        </div>
+                        <div class="answercont">
+                            <div class="answer">
+                                Your Riot ID is a unique username that you use to login, like AryanBa3a, and
+                                not your display name, like Ba3a#5807.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq__container-unit">
+                        <div class="question">
+                            Why do you need my password?
+                        </div>
+                        <div class="answercont">
+                            <div class="answer">
+                                We need your password in order to get your store data from Riot Games.
+                                Please note that sharing just your password does not endanger your account. <a
+                                    href="https://github.com/Ba3a-G/Check-Valorant/blob/main/Passwordless-Login/readme.md#can-we-steal-your-account-if-you-share-your-password"
+                                    target="_blank" rel="noopener noreferrer"> <span class="faq__link">Learn more
+                                        here</span> </a>.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq__container-unit">
+                        <div class="question">
+                            Can I check my store without entering password?
+                        </div>
+                        <div class="answercont">
+                            <div class="answer">
+                                Yes, we have designed our system such that you can still use our services
+                                without sharing your password with us. Learn more about <a
+                                    href="https://github.com/Ba3a-G/Check-Valorant/blob/main/Passwordless-Login/readme.md"
+                                    target="_blank" rel="noopener noreferrer"><span class="faq__link">Passwordless login
+                                        here</span></a>.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq__container-unit">
+                        <div class="question">
+                            Where do I get help?
+                        </div>
+                        <div class="answercont">
+                            <div class="answer">
+                                You can tweet us at <a href="https://twitter.com/Ba3a_Gamzo" target="_blank"
+                                    rel="noopener noreferrer"><i class="fab fa-twitter"></i><span
+                                        class="faq__link">Ba3a_Gamzo</span></a> or <a
+                                    href="https://twitter.com/S44WN"><i class="fab fa-twitter"></i><span
+                                        class="faq__link">S44WN</span></a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq__container-unit">
+                        <div class="question">
+                            When does the Valorant store reset?
+                        </div>
+                        <div class="answercont">
+                            <div class="answer">
+                                The in-game Valorant store resets every 24 hours at 1:00 am UTC / 8:00 pm
+                                EST / 6:30 am IST. The store is randomly generated for each Valorant player.
+                            </div>
+                        </div>
+                    </div>
+                    <div id="hiddenQs" class="hide">
+                        <div class="faq__container-unit">
+                            <div class="question">
+                                Can I purchase weapon skins from this website?
+                            </div>
+                            <div class="answercont">
+                                <div class="answer">
+                                    No, you can not purchase weapon skins direcly from this website. However, we
+                                    show everything else about the skins that you get in store, like cost (VP) and
+                                    finisher
+                                    video.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq__container-unit">
+                            <div class="question">
+                                Are battlepass skins included in the store rotation?
+                            </div>
+                            <div class="answercont">
+                                <div class="answer">
+                                    No, battlepass skins are never included in the store rotation. In order to
+                                    get those you have to purchase the battle-pass and then... if you are rich enough -
+                                    buy
+                                    all at
+                                    once or you got to grind the game to finish the battle-pass and get all the good
+                                    stuff.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq__container-unit">
+                            <div class="question">
+                                Are agent contract skins included in the rotation?
+                            </div>
+                            <div class="answercont">
+                                <div class="answer">
+                                    No, agent contract skins are exclusive and are not included in the daily
+                                    store rotation. You have to complete the agents' contract to get those.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='faq__expand'>
+                        <p class="more">+ More</p>
+                        <p class="less hide">+ less</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!--=============== Preloader ===============-->
+        <div class="preloader">
+            <svg class="circle" viewbox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+                <circle class="ripple" cx="80" cy="80" r="20"></circle>
+                <circle class="ripple ripple2" cx="80" cy="80" r="40"></circle>
+            </svg>
+        </div>
+
+    </main>
+
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">CheckValorant</h1>
+
+            <ul class="footer__list">
+
+                <li class="footer__item">
+                    <a href="#" class="footer__link">Home</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#about" class="footer__link">About</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#skills" class="footer__link">Contact</a>
+                </li>
+            </ul>
+
+
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="#work" class="footer__link">Privacy Policy</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#contact" class="footer__link">Terms Of service</a>
+                </li>
+            </ul>
+
+            <ul class="footer__social">
+                <li class="footer__social-item">
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-facebook footer__social-icon'></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-twitter footer__social-icon'></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-linkedin footer__social-icon'></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram footer__social-icon'></i>
+                    </a>
+                </li>
+            </ul>
+
+            <span class="footer__copy">
+                &#169; 2022 S44WN. All rights reserved.
+            </span>
+        </div>
+    </footer>
+
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src=""></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src=""></script>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src=""></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
